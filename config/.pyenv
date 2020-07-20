@@ -1,0 +1,6 @@
+# Load pyenv automatically by adding
+# the following to ~/.bashrc:
+
+export PATH="/home/ankit/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

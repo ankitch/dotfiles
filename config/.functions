@@ -1,0 +1,38 @@
+#!/bin/bash
+#project opener
+getParentDir() {
+   local wrap="$(cut -d'/' -f1 <<<"$1")"
+   echo "$wrap"
+}
+
+getpwd() {
+   local pd="$(cut -d'/' -f2 <<<"$1")"
+   echo "$pd"
+}
+
+fop() {
+  wrap="$(getParentDir $@)"
+  pd="$(getpwd $@)"
+  cd ~/$wrap/$pd/$pd-f;
+}
+
+bop() {
+  wrap="$(getParentDir $@)"
+  pd="$(getpwd $@)"
+  cd ~/$wrap/$pd/$pd-b;
+  pyenv activate $pd;
+}
+
+#project starter
+bern(){
+  bop $@;
+  python -V
+  runserver;
+}
+fern(){
+ fop $@
+ yarn dev
+}
+tet() {
+ getParentDir $@
+}
