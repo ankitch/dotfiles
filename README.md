@@ -4,5 +4,5 @@ These are my dotfiles. It is a WIP....
 
 
 
-for DOTFILE in `find /home/ankit/dotfiles/config`
-  source $DOTFILE
+`for DOTFILE in "find $HOME/dotfiles/config"
+  source $DOTFILE`
