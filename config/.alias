@@ -4,7 +4,16 @@ alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias sudo='sudo '
 
 
 #RUNSERVER DJANGO
 alias runserver='python manage.py runserver 0.0.0.0:8000'
+
+#network manager restart
+alias net-man-restart='sudo service network-manager restart'
+
+#Fix for network 
+alias fixnt="echo 'nameserver 8.8.8.8' | sudo tee -a /etc/resolv.conf; net-man-restart"
+
+
