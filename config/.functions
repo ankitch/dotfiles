@@ -36,3 +36,7 @@ fern(){
 tet() {
  getParentDir $@
 }
+
+workon () {
+  cd ~/mst/$@;
+}

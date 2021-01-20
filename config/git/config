@@ -1,31 +1,12 @@
 [user]
-	name = Ankit Chhetri
-	email = ankitchhetri0@gmail.com
+name = Ankit Chhetri
+email = ankitchhetri0@gmail.com
 
 [github]
-	user = ankitch
+user = ankitch
 
 [gitlab]
-    user = ankitch
+user = ankitch
 
 [core]
-	excludesfile = ~/.config/git/ignore
-	editor = nano
-	filemode = false
-	trustctime = false
-	autocrlf = input
-	untrackedCache = true
-	pager = diff-so-fancy | less --tabs=4 -RFX
-
-[grep]
-	lineNumber = true
-
-[help]
-	autocorrect = 1
-
-[push]
-	default = simple
-	followTags = true
-
-[fetch]
-	prune = true
+editor = nano
